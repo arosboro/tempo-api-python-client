@@ -49,7 +49,7 @@ class Tempo(object):
         # Return paginated results
         processed = 0
         while True:
-            params["offset"] = processed
+            #params["offset"] = processed
             response = requests.get(url, params=params, headers=headers)
             response.raise_for_status()
             data = response.json()
